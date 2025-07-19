@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speedometer</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&family=Krona+One&family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho+B1&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="sm1.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <svg class="circle" viewBox="0 0 100 100">
+      <circle class="bg" cx="50" cy="50" r="45" />
+      <circle class="progress" cx="50" cy="50" r="45" />
+    </svg>
+    <div class="speed-display">
+      <div id="speed">0</div>
+      <div class="unit">km</div>
+    </div>
+    <div class="record">
+        <div id="max-speed" class="max-speed">MAX 0 km</div> <!-- ←追加！ -->
+      </div>
+  </div>
+  
+
+  <script src="sm1.js"></script>
+</body>
+</html>

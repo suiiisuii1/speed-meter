@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    background: #0a0a0a;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overscroll-behavior: none;
+  }
+  
+  .wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+  }
+  
+  svg.circle {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+  
+  circle.bg {
+    fill: none;
+    stroke: #333;
+    stroke-width: 1.5;
+    stroke-dasharray: 212.06;
+    stroke-dashoffset: 0;
+    transform: rotate(225deg);
+    transform-origin: center;
+    stroke-linecap: round; /* ←これ追加！ */
+  }
+  
+  circle.progress {
+    fill: none;
+    stroke: white;
+    stroke-width: 1.5;
+    stroke-dasharray: 212.06; /* 3/4円 */
+    stroke-dashoffset: 212.06;
+    transform: rotate(225deg); /* ← 270°を中央上に配置 */
+    transform-origin: center;
+    stroke-linecap: round; /* ←これ追加！ */
+  }
+
+  
+  .speed-display {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  #speed {
+    font-size: 12.5rem;
+    font-weight: 100;
+    font-family: "SF Pro Rounded", sans-serif;
+    color: white;
+    text-align: center;
+    height: 270px;
+  }
+  
+  .unit {
+    font-size: 3rem;
+    opacity: 0.8;
+    font-weight: 200;
+    font-family: "SF Pro Rounded", sans-serif;
+  }
+
+  .max-speed {
+    font-size: 1.8em;
+    font-weight: 100;
+    font-family: "SF Pro Rounded", sans-serif;
+    color: #ccc;
+    margin-top: 0.5em;
+    text-align: center;
+
+  }
